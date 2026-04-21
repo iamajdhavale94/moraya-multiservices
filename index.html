@@ -15,16 +15,19 @@
       <div class="logo-area">
         <img src="logo.jpeg" alt="Moraya Multiservices Logo" class="logo" />
         <div>
-          <h1>Moraya Multiservices</h1>
-          <p>Maha E Seva Kendra | Online Services</p>
+          <h1 id="siteName">Moraya Multiservices</h1>
+          <p id="tagline">Maha E Seva Kendra | Online Services</p>
         </div>
       </div>
 
       <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" id="navServices">Services</a>
+        <a href="#about" id="navAbout">About</a>
+        <a href="#location" id="navLocation">Location</a>
+        <a href="#contact" id="navContact">Contact</a>
+
+        <!-- Language Button -->
+        <button class="lang-btn" onclick="toggleLanguage()" id="langBtn">मराठी</button>
       </nav>
     </div>
   </header>
@@ -33,26 +36,27 @@
   <section class="hero">
     <div class="container hero-flex">
       <div class="hero-text">
-        <h2>Your Trusted Maha E Seva Kendra</h2>
-        <p>
+        <h2 id="heroTitle">Your Trusted Maha E Seva Kendra</h2>
+        <p id="heroDesc">
           Fast and reliable online services such as GST Registration, PF Withdrawal,
           Government Applications, Website Creation, School Projects and many more.
         </p>
 
         <div class="hero-buttons">
-          <a class="btn primary" href="tel:7301591515">📞 Call Now</a>
+          <a class="btn primary" href="tel:7301591515" id="callBtn">📞 Call Now</a>
           <a class="btn secondary" target="_blank"
-             href="https://wa.me/917301591515?text=Hello%20Moraya%20Multiservices,%20I%20need%20help%20with%20your%20services">
+             href="https://wa.me/917301591515?text=Hello%20Moraya%20Multiservices,%20I%20need%20help%20with%20your%20services"
+             id="whatsappBtn">
             💬 WhatsApp
           </a>
         </div>
       </div>
 
       <div class="hero-card">
-        <h3>Contact Details</h3>
-        <p><b>Phone:</b> <a href="tel:7301591515">7301591515</a></p>
-        <p><b>Email:</b> <a href="mailto:morayamultiservices7@gmail.com">morayamultiservices7@gmail.com</a></p>
-        <p><b>Working Hours:</b><br>Mon - Sat: 9:00 AM - 7:00 PM</p>
+        <h3 id="contactTitle">Contact Details</h3>
+        <p><b id="phoneLabel">Phone:</b> <a href="tel:7301591515">7301591515</a></p>
+        <p><b id="emailLabel">Email:</b> <a href="mailto:morayamultiservices7@gmail.com">morayamultiservices7@gmail.com</a></p>
+        <p><b id="hoursLabel">Working Hours:</b><br><span id="hoursText">Mon - Sat: 9:00 AM - 7:00 PM</span></p>
       </div>
     </div>
   </section>
@@ -60,51 +64,51 @@
   <!-- SERVICES -->
   <section id="services" class="section">
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title" id="servicesTitle">Our Services</h2>
+      <p class="section-subtitle" id="servicesSub">
         We provide all Maha E Seva Kendra and online documentation services with quick support.
       </p>
 
       <div class="services-grid">
 
         <div class="service-card">
-          <h3>GST Registration</h3>
-          <p>GST new registration, filing assistance, business documentation support.</p>
+          <h3 id="s1Title">GST Registration</h3>
+          <p id="s1Desc">GST new registration, filing assistance, business documentation support.</p>
         </div>
 
         <div class="service-card">
-          <h3>PF Withdrawal</h3>
-          <p>EPFO claim filing, withdrawal form support and PF related guidance.</p>
+          <h3 id="s2Title">PF Withdrawal</h3>
+          <p id="s2Desc">EPFO claim filing, withdrawal form support and PF related guidance.</p>
         </div>
 
         <div class="service-card">
-          <h3>Website Creation</h3>
-          <p>Professional business website creation for shops, services and companies.</p>
+          <h3 id="s3Title">Website Creation</h3>
+          <p id="s3Desc">Professional business website creation for shops, services and companies.</p>
         </div>
 
         <div class="service-card">
-          <h3>School / College Projects</h3>
-          <p>Project printing, report making, PPT creation, assignments and submissions.</p>
+          <h3 id="s4Title">School / College Projects</h3>
+          <p id="s4Desc">Project printing, report making, PPT creation, assignments and submissions.</p>
         </div>
 
         <div class="service-card">
-          <h3>Government Forms</h3>
-          <p>Online applications, certificates, Aadhaar related work and document updates.</p>
+          <h3 id="s5Title">Government Forms</h3>
+          <p id="s5Desc">Online applications, certificates, Aadhaar related work and document updates.</p>
         </div>
 
         <div class="service-card">
-          <h3>Pan Card / Income Tax</h3>
-          <p>New PAN, PAN correction, ITR filing support and related services.</p>
+          <h3 id="s6Title">PAN Card / Income Tax</h3>
+          <p id="s6Desc">New PAN, PAN correction, ITR filing support and related services.</p>
         </div>
 
         <div class="service-card">
-          <h3>Online Bill Payments</h3>
-          <p>Electricity bill, mobile recharge, DTH, insurance payments and more.</p>
+          <h3 id="s7Title">Online Bill Payments</h3>
+          <p id="s7Desc">Electricity bill, mobile recharge, DTH, insurance payments and more.</p>
         </div>
 
         <div class="service-card">
-          <h3>Other Online Services</h3>
-          <p>All Maha E Seva Kendra services available as per customer requirement.</p>
+          <h3 id="s8Title">Other Online Services</h3>
+          <p id="s8Desc">All Maha E Seva Kendra services available as per customer requirement.</p>
         </div>
 
       </div>
@@ -114,12 +118,10 @@
   <!-- ABOUT -->
   <section id="about" class="section light">
     <div class="container">
-      <h2 class="section-title">About Moraya Multiservices</h2>
-      <p class="about-text">
+      <h2 class="section-title" id="aboutTitle">About Moraya Multiservices</h2>
+      <p class="about-text" id="aboutDesc">
         Moraya Multiservices is a trusted Maha E Seva Kendra providing fast, secure, and reliable
         online documentation services. We focus on customer satisfaction and timely work completion.
-        We help individuals, students, and businesses with government services, GST, PF, website creation,
-        project works, and other online services.
       </p>
     </div>
   </section>
@@ -127,13 +129,12 @@
   <!-- LOCATION -->
   <section id="location" class="section">
     <div class="container">
-      <h2 class="section-title">Our Location</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title" id="locationTitle">Our Location</h2>
+      <p class="section-subtitle" id="locationSub">
         Visit our office for quick service and support.
       </p>
 
       <div class="map-box">
-        <!-- Replace the map link below with your exact Google Map embed -->
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.8471073922259!2d74.71854423482668!3d17.004606868873907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc139001e2cedf1%3A0x9f11912f6f98a01b!2sMoraya%20online%20Services!5e0!3m2!1sen!2sin!4v1776768589274!5m2!1sen!2sin"
           width="100%" 
@@ -144,34 +145,35 @@
         </iframe>
       </div>
 
-     
+      
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section light">
     <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title" id="contactUsTitle">Contact Us</h2>
+      <p class="section-subtitle" id="contactSub">
         For any service enquiry, call us or send a message.
       </p>
 
       <div class="contact-grid">
         <div class="contact-card">
-          <h3>Phone</h3>
+          <h3 id="phoneTitle">Phone</h3>
           <p><a href="tel:7301591515">7301591515</a></p>
         </div>
 
         <div class="contact-card">
-          <h3>Email</h3>
+          <h3 id="emailTitle">Email</h3>
           <p><a href="mailto:morayamultiservices7@gmail.com">morayamultiservices7@gmail.com</a></p>
         </div>
 
         <div class="contact-card">
-          <h3>WhatsApp</h3>
+          <h3 id="whatsappTitle">WhatsApp</h3>
           <p>
             <a target="_blank"
-               href="https://wa.me/917301591515?text=Hello%20Moraya%20Multiservices,%20I%20need%20help%20with%20your%20services">
+               href="https://wa.me/917301591515?text=Hello%20Moraya%20Multiservices,%20I%20need%20help%20with%20your%20services"
+               id="chatLink">
               Click to Chat
             </a>
           </p>
@@ -179,12 +181,12 @@
       </div>
 
       <div class="contact-form-box">
-        <h3>Send Message</h3>
+        <h3 id="formTitle">Send Message</h3>
         <form action="mailto:morayamultiservices7@gmail.com" method="post" enctype="text/plain">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="text" name="phone" placeholder="Your Mobile Number" required />
-          <textarea name="message" placeholder="Write your message..." required></textarea>
-          <button type="submit" class="btn primary">Send Message</button>
+          <input type="text" name="name" placeholder="Your Name" required id="nameInput"/>
+          <input type="text" name="phone" placeholder="Your Mobile Number" required id="phoneInput"/>
+          <textarea name="message" placeholder="Write your message..." required id="msgInput"></textarea>
+          <button type="submit" class="btn primary" id="sendBtn">Send Message</button>
         </form>
       </div>
 
@@ -194,10 +196,105 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-flex">
-      <p>© 2026 Moraya Multiservices. All Rights Reserved.</p>
-      <p>Designed for Maha E Seva Kendra Services</p>
+      <p id="footerText">© 2026 Moraya Multiservices. All Rights Reserved.</p>
+      <p id="footerText2">Designed for Maha E Seva Kendra Services</p>
     </div>
   </footer>
+
+
+  <!-- LANGUAGE SCRIPT -->
+  <script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      if (currentLang === "en") {
+        // Switch to Marathi
+        document.getElementById("siteName").innerText = "मोरया मल्टीसर्व्हिसेस";
+        document.getElementById("tagline").innerText = "महा ई-सेवा केंद्र | ऑनलाइन सेवा";
+
+        document.getElementById("navServices").innerText = "सेवा";
+        document.getElementById("navAbout").innerText = "माहिती";
+        document.getElementById("navLocation").innerText = "लोकेशन";
+        document.getElementById("navContact").innerText = "संपर्क";
+
+        document.getElementById("heroTitle").innerText = "आपले विश्वासार्ह महा ई-सेवा केंद्र";
+        document.getElementById("heroDesc").innerText =
+          "GST रजिस्ट्रेशन, PF काढणे, सरकारी अर्ज, वेबसाइट बनवणे, शालेय प्रोजेक्ट्स आणि इतर अनेक सेवा येथे उपलब्ध आहेत.";
+
+        document.getElementById("callBtn").innerText = "📞 कॉल करा";
+        document.getElementById("whatsappBtn").innerText = "💬 व्हॉट्सअ‍ॅप";
+
+        document.getElementById("contactTitle").innerText = "संपर्क माहिती";
+        document.getElementById("phoneLabel").innerText = "मोबाईल:";
+        document.getElementById("emailLabel").innerText = "ईमेल:";
+        document.getElementById("hoursLabel").innerText = "वेळ:";
+        document.getElementById("hoursText").innerText = "सोम - शनि: सकाळी 9:00 ते संध्याकाळी 7:00";
+
+        document.getElementById("servicesTitle").innerText = "आमच्या सेवा";
+        document.getElementById("servicesSub").innerText =
+          "महा ई-सेवा केंद्रातील सर्व ऑनलाइन व डॉक्युमेंटेशन सेवा येथे उपलब्ध आहेत.";
+
+        document.getElementById("s1Title").innerText = "GST रजिस्ट्रेशन";
+        document.getElementById("s1Desc").innerText = "नवीन GST नोंदणी, फाईलिंग, व्यवसायासाठी डॉक्युमेंट सपोर्ट.";
+
+        document.getElementById("s2Title").innerText = "PF काढणे";
+        document.getElementById("s2Desc").innerText = "EPFO क्लेम फाईलिंग, PF विड्रॉवल आणि मार्गदर्शन.";
+
+        document.getElementById("s3Title").innerText = "वेबसाईट बनवणे";
+        document.getElementById("s3Desc").innerText = "व्यवसायासाठी प्रोफेशनल वेबसाईट डिझाईन व तयार करणे.";
+
+        document.getElementById("s4Title").innerText = "शाळा / कॉलेज प्रोजेक्ट";
+        document.getElementById("s4Desc").innerText = "प्रोजेक्ट बनवणे, रिपोर्ट, PPT, असाइनमेंट व प्रिंटिंग.";
+
+        document.getElementById("s5Title").innerText = "सरकारी फॉर्म";
+        document.getElementById("s5Desc").innerText = "ऑनलाइन अर्ज, प्रमाणपत्रे, आधार अपडेट व इतर सेवा.";
+
+        document.getElementById("s6Title").innerText = "पॅन कार्ड / इन्कम टॅक्स";
+        document.getElementById("s6Desc").innerText = "नवीन पॅन, दुरुस्ती, ITR फाईलिंग व मार्गदर्शन.";
+
+        document.getElementById("s7Title").innerText = "ऑनलाइन बिल पेमेंट";
+        document.getElementById("s7Desc").innerText = "लाईट बिल, मोबाईल रिचार्ज, DTH, इन्शुरन्स पेमेंट.";
+
+        document.getElementById("s8Title").innerText = "इतर ऑनलाइन सेवा";
+        document.getElementById("s8Desc").innerText = "ग्राहकांच्या गरजेनुसार सर्व ऑनलाइन सेवा उपलब्ध.";
+
+        document.getElementById("aboutTitle").innerText = "मोरया मल्टीसर्व्हिसेस बद्दल";
+        document.getElementById("aboutDesc").innerText =
+          "मोरया मल्टीसर्व्हिसेस हे विश्वासार्ह महा ई-सेवा केंद्र आहे. आम्ही ग्राहकांना जलद, सुरक्षित आणि योग्य सेवा देण्यावर भर देतो.";
+
+        document.getElementById("locationTitle").innerText = "आमचे लोकेशन";
+        document.getElementById("locationSub").innerText = "जलद सेवा मिळवण्यासाठी आमच्या ऑफिसला भेट द्या.";
+
+        document.getElementById("mapNote").innerText =
+          "📌 टीप: योग्य लोकेशनसाठी Google Maps embed लिंक अपडेट करा.";
+
+        document.getElementById("contactUsTitle").innerText = "संपर्क करा";
+        document.getElementById("contactSub").innerText =
+          "सेवेसाठी कॉल करा किंवा मेसेज पाठवा.";
+
+        document.getElementById("phoneTitle").innerText = "मोबाईल";
+        document.getElementById("emailTitle").innerText = "ईमेल";
+        document.getElementById("whatsappTitle").innerText = "व्हॉट्सअ‍ॅप";
+        document.getElementById("chatLink").innerText = "चॅट करा";
+
+        document.getElementById("formTitle").innerText = "मेसेज पाठवा";
+        document.getElementById("nameInput").placeholder = "तुमचे नाव";
+        document.getElementById("phoneInput").placeholder = "मोबाईल नंबर";
+        document.getElementById("msgInput").placeholder = "तुमचा मेसेज लिहा...";
+        document.getElementById("sendBtn").innerText = "मेसेज पाठवा";
+
+        document.getElementById("footerText").innerText = "© 2026 मोरया मल्टीसर्व्हिसेस. सर्व हक्क राखीव.";
+        document.getElementById("footerText2").innerText = "महा ई-सेवा केंद्रासाठी डिझाईन केलेले";
+
+        document.getElementById("langBtn").innerText = "English";
+        currentLang = "mr";
+
+      } else {
+        // Switch back to English
+        location.reload();
+      }
+    }
+  </script>
 
 </body>
 </html>
