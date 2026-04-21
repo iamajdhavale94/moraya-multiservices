@@ -310,3 +310,16 @@ textarea {
   font-size: 14px;
   opacity: 0.95;
 }
+.lang-btn {
+  background: #ffb703;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.lang-btn:hover {
+  background: #ffc933;
+}
